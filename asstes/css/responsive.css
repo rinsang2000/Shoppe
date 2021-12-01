@@ -1,0 +1,113 @@
+/* MB and TL */
+@media (max-width:1023px) {
+    .hide-on-mobile-tablet{
+        display: none;
+    }
+    .header__cart-list{
+        position: fixed;
+        top: 68px;
+        right: 0;
+        width: 100%;
+        padding: 0 calc((100% - 644px) /2);
+    }
+    .header__cart-list::after{
+        display: none ;
+    }
+    .header{
+        height: 68px;
+    }
+}   
+@media (min-width:740px) and (max-width:1023px) {
+    .hide-on-tablet{
+        display: none;
+    }
+    .header__logo{
+        padding-bottom: 0;
+    }
+    .header__logo-img {
+        width: 120px;
+    }
+    .header-with-search{
+        height: 68px;
+    }
+    .much__search{
+        display: none;
+    }
+    .header__search{
+        padding-top: 0;
+        height: 40px;
+    }
+    .header__cart {
+        width: 100px;
+        text-align: right;
+    }
+    .slide{
+        margin-top: 90px;
+    }
+}  
+@media (max-width:739px) {
+    .hide-on-mobile{
+        display: none;
+    }
+    .header__mobile-search{
+        display: block;
+    }
+    .header-with-search{
+        justify-content: space-between;
+        height: 68px;
+    }
+    .header__search{
+        position: fixed;
+        top: 68px;
+        padding: 0;
+        animation: searchMobile  linear 0.3s;
+        display: none;
+    }
+    .ab{
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+        padding: 0 16px;
+    }
+    .much__search{
+        display: none;
+    }
+    .header__logo{
+        width: unset;
+        padding: unset;
+    }
+    .header__cart{
+        width: unset;
+        margin-right: 12px;
+    }
+    .header__search-checkbox:checked ~ .header__search{
+        display: flex;
+    }
+    .header__search-history{
+        position: fixed;
+        top: 107px;
+        width: 100%;
+        left: 0;
+        box-shadow: 0 1px  rgba(0, 0, 0, 0.05);
+    }
+    .slide{
+        margin-top: 80px;
+    }
+    .container{
+        margin-top: 5px;
+    }
+    .pagination-item{
+        margin: 0;
+    }
+    .national{
+        flex-wrap: wrap;
+    }
+    @keyframes searchMobile {
+        from{
+            opacity: 0;
+            top: 34px;
+        }
+        to{
+            opacity: 1;
+            top: 64px;
+        }
+    }
+} 
